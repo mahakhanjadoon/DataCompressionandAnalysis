@@ -1,0 +1,12 @@
+#cross{
+-fx-background-image: url("darkCross.png");
+
+   -fx-background-size: cover;
+   -fx-background-position: top left;
+}
+#minimize{
+-fx-background-image: url("darkMinimize.png");
+
+ -fx-background-size: cover;
+ -fx-background-position: top left;
+}

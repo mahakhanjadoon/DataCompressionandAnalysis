@@ -1,0 +1,58 @@
+#loginBg{
+-fx-background-image: url("maxresdefault.jpg");
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+   -fx-background-position: top left;
+   -fx-background-repeat: stretch;
+   -fx-background-size: cover;
+}
+
+#logo{
+-fx-background-image: url("cern_logo.png");
+-fx-background-size: 107 83;
+-fx-background-position: top left;
+}
+#vbox{
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+}
+#loginButton{
+-fx-background-color:#527a7a;
+
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+
+}
+#loginButton:hover{
+-fx-background-color: #85adad;
+-fx-text-fill: black;
+}
+#username{
+-fx-border-color: white;
+-fx-background-color: rgba(255,255,255,0.01);
+-fx-text-fill: white;
+
+
+}
+#password{
+-fx-border-color: white;
+-fx-background-color: rgba(255,255,255,0.01);
+-fx-text-fill:white;
+
+}
+
+#cross{
+-fx-background-image: url("cross.png");
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+   -fx-background-position: top left;
+   -fx-background-repeat: stretch;
+   -fx-background-size: cover;
+}
+#minimize{
+-fx-background-image: url("minimize.png");
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+   -fx-background-position: top left;
+   -fx-background-repeat: stretch;
+   -fx-background-size: cover;
+}
+

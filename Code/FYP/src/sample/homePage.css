@@ -1,0 +1,114 @@
+#leftLogo
+{
+-fx-background-image: url("cernLogo.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+
+#signOutLogo
+{
+-fx-background-image: url("logout.png");
+-fx-background-size: cover;
+-fx-background-color: white;
+}
+
+#cross1{
+-fx-background-image: url("darkCross.png");
+
+   -fx-background-size: cover;
+   -fx-background-position: top left;
+}
+#minimize1{
+-fx-background-image: url("darkMinimize.png");
+
+ -fx-background-size: cover;
+ -fx-background-position: top left;
+}
+
+
+.menu{
+-fx-background-color: transparent;
+-fx-text-fill: #c2ccd6;
+-fx-font-size: 14px;
+-fx-text-alignment: left;
+
+}
+
+.button{
+-fx-background-insets: 0 0 -1 0,0,1;
+-fx-background-radius: 5,5,4;
+-fx-padding: 7 30 7 30;}
+
+.button:hover {
+    -fx-background-color: #0e191f;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 7 30 7 30;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-font-size: 16px;
+}
+.button:focused{
+    -fx-background-color: #0e191f;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 7 30 7 30;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-font-size: 16px;
+}
+
+#user{
+-fx-background-image: url("user.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+
+#homeIcon
+{
+-fx-background-image: url("homee.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+
+#icon2{
+-fx-background-image: url("upload.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+
+#icon3{
+-fx-background-image: url("experiment.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+
+#icon4{
+-fx-background-image: url("analysis.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+
+#icon5{
+-fx-background-image: url("settings.png");
+
+
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+#settings{
+-fx-background-image: url("signout.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+
+
+

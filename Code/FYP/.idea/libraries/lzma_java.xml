@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lzma-java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/libs/lzma-java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

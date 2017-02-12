@@ -1,0 +1,72 @@
+#homeLogo{
+-fx-background-image: url("maxresdefault.jpg");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+#aliceLogo{
+-fx-background-image: url("alice.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+#alice{
+ -fx-background-color: rgba(0, 0, 0, 0.8);
+}
+#alice2{
+ -fx-background-color: rgba(0, 0, 0, 0.8);
+}
+.btn{
+-fx-background-color: #cccce5;
+-fx-background-radius: 0px, 0px, 0px, 0px;
+-fx-text-fill: #12121d;
+
+
+}
+.btn:hover {
+    -fx-background-color: #9caeb2;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 0px, 0px, 0px, 0px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-font-size: 16px;
+}
+.btn:focused{
+ -fx-background-color: #9caeb2;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 0px, 0px, 0px, 0px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-font-size: 16px;
+}
+#yourUploads{
+-fx-background-image: url("proton.jpg");
+-fx-background-size: cover;
+-fx-background-position: top left;
+
+}
+#download{
+-fx-background-image: url("data.jpg");
+-fx-background-size: cover;
+-fx-background-position: top left;
+
+}
+#uploadPane{
+-fx-background-image: url("atom.jpg");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+#statistics{
+-fx-background-image: url("statistics.jpg");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+.lbl{
+-fx-font-size: 12px;
+-fx-text-fill: #12121d;
+-fx-font-weight: bold;
+-fx-font-family: fantasy;
+}
+

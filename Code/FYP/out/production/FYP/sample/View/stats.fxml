@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" stylesheets="/sample/stats.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatsController">
+   <children>
+      <AnchorPane layoutX="33.0" prefHeight="53.0" prefWidth="534.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: grey;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Dashboard" textFill="#4277cd">
+               <font>
+                  <Font name="Calibri" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="181.0" layoutY="14.0" text="&gt; Overview and Stats" textFill="#434141">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="30.0" layoutY="115.0" prefHeight="261.0" prefWidth="542.0" style="-fx-border-color: #c5bebe; -fx-grid-lines-visible: false;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="146.0" minHeight="0.0" prefHeight="133.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox prefHeight="126.0" prefWidth="268.0" style="-fx-border-color: #9a9393;">
+               <children>
+                  <Pane fx:id="icon1" prefHeight="97.0" prefWidth="100.0">
+                     <HBox.margin>
+                        <Insets bottom="14.0" left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <VBox prefHeight="105.0" prefWidth="157.0">
+                     <children>
+                        <Label fx:id="space" prefHeight="52.0" prefWidth="147.0" text="Label" textFill="#97c85e">
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="34.0" prefWidth="147.0" text="worth data stored">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #9a9393;" GridPane.columnIndex="1">
+               <children>
+                  <Pane fx:id="icon2" prefHeight="92.0" prefWidth="99.0">
+                     <HBox.margin>
+                        <Insets bottom="18.0" left="5.0" top="16.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <VBox prefHeight="126.0" prefWidth="181.0">
+                     <children>
+                        <Label fx:id="saved" prefHeight="42.0" prefWidth="163.0" text="Label" textFill="#c876a7">
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="39.0" prefWidth="163.0" text="storage space saved">
+                           <VBox.margin>
+                              <Insets left="10.0" top="4.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #9a9393;" GridPane.rowIndex="1">
+               <children>
+                  <Pane fx:id="icon3" prefHeight="98.0" prefWidth="100.0">
+                     <HBox.margin>
+                        <Insets bottom="18.0" left="5.0" top="17.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <VBox prefHeight="139.0" prefWidth="170.0">
+                     <children>
+                        <Label fx:id="downloads" prefHeight="50.0" prefWidth="160.0" text="Label" textFill="#5d9ac9">
+                           <VBox.margin>
+                              <Insets left="7.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="160.0" text="Downloads">
+                           <VBox.margin>
+                              <Insets left="7.0" top="4.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="110.0" prefWidth="259.0" style="-fx-border-color: #9a9393;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Pane fx:id="icon4" prefHeight="93.0" prefWidth="96.0">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="5.0" top="20.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <VBox prefHeight="139.0" prefWidth="161.0">
+                     <children>
+                        <Label fx:id="experiments" prefHeight="49.0" prefWidth="154.0" text="Label" textFill="#c86760">
+                           <VBox.margin>
+                              <Insets left="7.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="154.0" text="Experiments">
+                           <VBox.margin>
+                              <Insets left="7.0" top="4.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+.hbox-border{
+
+  -fx-border-color: grey;
+  -fx-border-width: 0 0 1 0;
+  -fx-border-insets: 0 10 1 0;
+
+}
+#analyse{
+-fx-background-color: transparent;
+-fx-font: 11.5 arial;
+}
+

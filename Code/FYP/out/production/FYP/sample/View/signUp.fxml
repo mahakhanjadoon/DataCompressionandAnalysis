@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#handleBgDragged" onMousePressed="#handleBgPressed" prefHeight="311.0" prefWidth="329.0" style="-fx-border-color: grey; -fx-border-width: 2;" stylesheets="/sample/singup.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpBox">
+   <children>
+      <Label alignment="CENTER" layoutX="94.0" layoutY="26.0" prefHeight="31.0" prefWidth="126.0" style="-fx-border-color: grey; -fx-background-color: #e7e7e7;" text="Sign Up " textAlignment="CENTER" textFill="#331251">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="74.0" layoutY="105.0" prefHeight="198.0" prefWidth="188.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="126.0" text="* Max 25 charachters" textFill="#3c2a64">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userName" alignment="TOP_LEFT" promptText="Choose a Username">
+               <VBox.margin>
+                  <Insets top="3.0" />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="15.0" prefWidth="102.0" text="* Max 8 Characters" textFill="#3c2a64">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="password" promptText="Choose a Password">
+               <VBox.margin>
+                  <Insets top="3.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="signUp" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="22.0" prefWidth="86.0" style="-fx-background-color: #625a93;" text="Sign Up" textFill="#e0e0e1">
+               <VBox.margin>
+                  <Insets left="38.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="completed" alignment="CENTER" layoutX="38.0" layoutY="70.0" prefHeight="17.0" prefWidth="238.0" textFill="#3364b2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <HBox layoutX="237.0" layoutY="14.0" prefHeight="15.0" prefWidth="37.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Button fx:id="minimize" maxHeight="10.0" maxWidth="10.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#handleMinimize" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: transparent;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+            <Button fx:id="cross" maxHeight="10.0" maxWidth="10.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#handleCross" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: transparent;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

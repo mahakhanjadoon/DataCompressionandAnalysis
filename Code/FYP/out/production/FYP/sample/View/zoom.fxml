@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="695.0" style="-fx-border-color: grey; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GraphController">
+   <children>
+      <AnchorPane fx:id="zoomPane" layoutX="72.0" layoutY="39.0" prefHeight="518.0" prefWidth="569.0" />
+   </children>
+</AnchorPane>

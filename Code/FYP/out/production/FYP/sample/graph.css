@@ -1,0 +1,15 @@
+.download{
+-fx-background-color: transparent;
+-fx-background-image: url("download1.png");
+
+  -fx-background-size: cover;
+
+}
+.zoom{
+-fx-background-color: transparent;
+-fx-background-image: url("zoom.png");
+
+  -fx-background-size: cover;
+
+
+}

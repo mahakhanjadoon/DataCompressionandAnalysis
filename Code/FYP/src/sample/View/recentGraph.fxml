@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="760.0" style="-fx-border-width: ;" stylesheets="/sample/graph.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RecentAnalysisController">
+    <children>
+        <AnchorPane layoutX="4.0" prefHeight="28.0" prefWidth="760.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="9.0" prefHeight="27.0" prefWidth="560.0" style="-fx-background-color: transparent; -fx-alignment: center;" text="Dashboard for Data Monitering using Charts" textAlignment="CENTER" textFill="#394472" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="89.0" AnchorPane.topAnchor="9.0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="graphPane" layoutX="189.0" layoutY="68.0" prefHeight="235.0" prefWidth="420.0">
+            <children>
+                <LineChart fx:id="lineChart" layoutX="45.0" layoutY="-40.0" prefHeight="235.0" prefWidth="388.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <xAxis>
+                        <NumberAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+            </children>
+        </AnchorPane>
+        <HBox fx:id="separateGraphPane" layoutX="1.0" layoutY="334.0" prefHeight="297.0" prefWidth="760.0">
+            <children>
+                <LineChart>
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <LineChart>
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <LineChart>
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+            </children></HBox>
+        <VBox layoutX="25.0" layoutY="76.0" prefHeight="192.0" prefWidth="147.0" spacing="10.0">
+            <children>
+                <RadioButton fx:id="lineChartBtn" mnemonicParsing="false" onAction="#lineChart" prefHeight="17.0" prefWidth="150.0" text="Line Chart" />
+                <RadioButton fx:id="barChartBtn" mnemonicParsing="false" onAction="#barChart" prefHeight="17.0" prefWidth="145.0" text="Bar Chart" />
+                <RadioButton fx:id="areaChartBtn" mnemonicParsing="false" onAction="#areaChart" prefHeight="17.0" prefWidth="142.0" text="Area Chart" />
+                <RadioButton fx:id="scatterChartBtn" mnemonicParsing="false" onAction="#scatterChart" prefHeight="17.0" prefWidth="147.0" text="Scatter Chart" />
+                <RadioButton fx:id="bubbleChartBtn" mnemonicParsing="false" onAction="#bubbleChart" prefHeight="17.0" prefWidth="144.0" text="Bubble Chart" />
+                <RadioButton fx:id="stackedAreaBtn" mnemonicParsing="false" onAction="#stackedArea" prefHeight="17.0" prefWidth="146.0" text="Stacked Area Chart" />
+                <RadioButton fx:id="stackedBarBtn" mnemonicParsing="false" onAction="#stackedBar" prefHeight="17.0" prefWidth="150.0" text="Stacked Bar Chart" />
+            </children>
+            <padding>
+                <Insets left="5.0" top="5.0" />
+            </padding>
+        </VBox>
+        <Button fx:id="download1" layoutX="92.0" layoutY="319.0" maxHeight="25.0" maxWidth="26.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#download1" prefHeight="17.0" prefWidth="14.0" style="-fx-background-color: transparent;" styleClass="download" />
+        <Button layoutX="374.0" layoutY="319.0" maxHeight="25.0" maxWidth="26.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#download2" prefHeight="17.0" prefWidth="14.0" style="-fx-background-color: transparent;" styleClass="download" />
+        <Button layoutX="632.0" layoutY="319.0" maxHeight="25.0" maxWidth="26.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#download3" prefHeight="17.0" prefWidth="14.0" style="-fx-background-color: transparent;" styleClass="download" />
+        <Button fx:id="downloadMain" layoutX="609.0" layoutY="77.0" maxHeight="25.0" maxWidth="26.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#downloadMain" prefHeight="17.0" prefWidth="14.0" style="-fx-background-color: transparent;" styleClass="download" />
+        <Button layoutX="112.0" layoutY="319.0" maxHeight="25.0" maxWidth="23.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#zoom1" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: transparent;" styleClass="zoom" />
+        <Button layoutX="399.0" layoutY="319.0" maxHeight="25.0" maxWidth="23.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#zoom2" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: transparent;" styleClass="zoom" />
+        <Button layoutX="652.0" layoutY="319.0" maxHeight="25.0" maxWidth="23.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#zoom3" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: transparent;" styleClass="zoom" />
+        <Button fx:id="zoomMain" layoutX="629.0" layoutY="77.0" maxHeight="25.0" maxWidth="23.0" minHeight="17.0" minWidth="14.0" mnemonicParsing="false" onAction="#zoomMain" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: transparent;" styleClass="zoom" />
+        <Label layoutX="300.0" layoutY="41.0" prefHeight="27.0" prefWidth="81.0" text="Experiment:" textFill="#a83b3b">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="experimentName" layoutX="381.0" layoutY="41.0" prefHeight="27.0" prefWidth="95.0" textFill="#972424">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

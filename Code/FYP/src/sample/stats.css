@@ -1,0 +1,20 @@
+#icon1{
+-fx-background-image: url("storageS.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+#icon2{
+-fx-background-image: url("savedS.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+#icon3{
+-fx-background-image: url("downloadS.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}
+#icon4{
+-fx-background-image: url("experimentS.png");
+-fx-background-size: cover;
+-fx-background-position: top left;
+}

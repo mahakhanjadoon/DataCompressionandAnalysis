@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="FYP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FYP_jar</output-path>
+    <root id="archive" name="FYP.jar">
+      <element id="module-output" name="FYP" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/libs/mongo-java-driver-3.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/libs/lzma-java.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

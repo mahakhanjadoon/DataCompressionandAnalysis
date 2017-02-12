@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" stylesheets="/sample/experimentss.css" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.yourUploadController">
+    <children>
+        <Label alignment="CENTER" layoutX="223.0" layoutY="14.0" prefHeight="30.0" prefWidth="181.0" text="Your Experiments" textFill="#37547c" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <ScrollPane layoutX="42.0" layoutY="53.0" prefHeight="526.0" prefViewportHeight="502.0" prefViewportWidth="566.0" prefWidth="581.0">
+            <content>
+                <VBox fx:id="vbox" layoutX="42.0" layoutY="75.0" prefHeight="516.0" prefWidth="569.0" AnchorPane.leftAnchor="42.0">
+                    <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
